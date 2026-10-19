@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xem và tìm kiếm bàn phím, chuột, tai nghe cùng phụ kiện tại TechGear.">
+    <title>Sản phẩm | TechGear.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="store.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng chính">
+            <a class="brand" href="index.html" aria-label="TechGear - Trang chủ">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html" aria-current="page">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="feedback.html">Góp ý</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="cart-trigger" type="button" data-cart-trigger>
+                    Giỏ hàng <span class="cart-trigger-count" data-cart-count>1</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <section aria-labelledby="catalog-title">
+            <h1 class="section-heading" id="catalog-title">Khám phá gear</h1>
+            <div class="catalog-tools">
+                <label class="search-box">
+                    <span class="search-icon" aria-hidden="true">⌕</span>
+                    <span class="is-hidden">Tìm sản phẩm</span>
+                    <input type="search" aria-label="Tìm sản phẩm" placeholder="Tìm sản phẩm bạn yêu thích..." data-product-search>
+                </label>
+                <div class="category-filter" aria-label="Lọc theo danh mục">
+                    <button class="filter-button" type="button" data-category-filter="all" aria-pressed="true">Tất cả</button>
+                    <button class="filter-button" type="button" data-category-filter="keyboard" aria-pressed="false">Bàn phím</button>
+                    <button class="filter-button" type="button" data-category-filter="mouse" aria-pressed="false">Chuột</button>
+                    <button class="filter-button" type="button" data-category-filter="audio" aria-pressed="false">Tai nghe</button>
+                    <button class="filter-button" type="button" data-category-filter="accessory" aria-pressed="false">Phụ kiện</button>
+                </div>
+            </div>
+
+            <div class="product-grid product-grid-page">
+                <article class="product-card" data-category="keyboard">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Bàn phím cơ Keychron K2 Wireless" loading="lazy">
+                        <span class="product-badge">BÀN PHÍM</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">BÀN PHÍM CƠ</p>
+                        <h2 class="product-title">Keychron K2 Wireless</h2>
+                        <p class="product-description">Gọn gàng, kết nối linh hoạt, gõ thoải mái mỗi ngày.</p>
+                        <p class="product-price">2.190.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Keychron K2 Wireless vào giỏ hàng" data-add-to-cart data-id="keychron-k2" data-name="Keychron K2 Wireless" data-price="2190000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="keyboard">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Bàn phím cơ Akko 5075B Plus" loading="lazy">
+                        <span class="product-badge">BÀN PHÍM</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">BÀN PHÍM CƠ</p>
+                        <h2 class="product-title">Akko 5075B Plus</h2>
+                        <p class="product-description">Layout 75%, kết nối đa chế độ, cảm giác gõ chắc tay.</p>
+                        <p class="product-price">1.890.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Akko 5075B Plus vào giỏ hàng" data-add-to-cart data-id="akko-5075b-plus" data-name="Akko 5075B Plus" data-price="1890000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="mouse">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Chuột Logitech G Pro X Superlight" loading="lazy">
+                        <span class="product-badge product-badge-hot">HOT</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">CHUỘT GAMING</p>
+                        <h2 class="product-title">Logitech G Pro X Superlight</h2>
+                        <p class="product-description">Chuột gaming siêu nhẹ, theo dõi chính xác.</p>
+                        <p class="product-price">3.290.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Logitech G Pro X Superlight vào giỏ hàng" data-add-to-cart data-id="logitech-superlight" data-name="Logitech G Pro X Superlight" data-price="3290000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="mouse">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Chuột gaming Razer DeathAdder" loading="lazy">
+                        <span class="product-badge">CHUỘT</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">CHUỘT GAMING</p>
+                        <h2 class="product-title">Razer DeathAdder V3</h2>
+                        <p class="product-description">Form công thái học, cầm nắm thoải mái trong thời gian dài.</p>
+                        <p class="product-price">2.490.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Razer DeathAdder V3 vào giỏ hàng" data-add-to-cart data-id="razer-deathadder-v3" data-name="Razer DeathAdder V3" data-price="2490000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="audio">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Tai nghe Sony WH-1000XM5" loading="lazy">
+                        <span class="product-badge">TAI NGHE</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">TAI NGHE</p>
+                        <h2 class="product-title">Sony WH-1000XM5</h2>
+                        <p class="product-description">Âm thanh sống động, chống ồn cho không gian tập trung.</p>
+                        <p class="product-price">7.490.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Sony WH-1000XM5 vào giỏ hàng" data-add-to-cart data-id="sony-wh1000xm5" data-name="Sony WH-1000XM5" data-price="7490000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="audio">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Tai nghe chụp tai HyperX Cloud II" loading="lazy">
+                        <span class="product-badge">TAI NGHE</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">TAI NGHE</p>
+                        <h2 class="product-title">HyperX Cloud II</h2>
+                        <p class="product-description">Đệm tai êm, âm thanh rõ ràng cho game và giải trí.</p>
+                        <p class="product-price">1.990.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm HyperX Cloud II vào giỏ hàng" data-add-to-cart data-id="hyperx-cloud-ii" data-name="HyperX Cloud II" data-price="1990000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="accessory">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1616440347437-b1c73416efc2?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Lót chuột deskmat cho góc máy" loading="lazy">
+                        <span class="product-badge">PHỤ KIỆN</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">LÓT CHUỘT</p>
+                        <h2 class="product-title">Deskmat Studio</h2>
+                        <p class="product-description">Bề mặt rộng, hoàn thiện gọn gàng cho mặt bàn.</p>
+                        <p class="product-price">390.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Deskmat Studio vào giỏ hàng" data-add-to-cart data-id="deskmat-studio" data-name="Deskmat Studio" data-price="390000">+</button>
+                    </div>
+                </article>
+                <article class="product-card" data-category="accessory">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1527814050087-3793815479db?auto=format&amp;fit=crop&amp;w=700&amp;q=85" alt="Phụ kiện chuột không dây cho góc làm việc" loading="lazy">
+                        <span class="product-badge">PHỤ KIỆN</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">PHỤ KIỆN</p>
+                        <h2 class="product-title">Chuột không dây Studio</h2>
+                        <p class="product-description">Thiết kế gọn nhẹ, phù hợp cho công việc hằng ngày.</p>
+                        <p class="product-price">590.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Chuột không dây Studio vào giỏ hàng" data-add-to-cart data-id="wireless-mouse-studio" data-name="Chuột không dây Studio" data-price="590000">+</button>
+                    </div>
+                </article>
+            </div>
+            <p class="empty-results is-hidden" data-empty-results>Không tìm thấy sản phẩm phù hợp.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <p>© 2026 TechGear. Bản quyền của Nguyễn Hoàng Sơn - PH64882.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" data-cart-overlay aria-hidden="true">
+        <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+            <div class="cart-heading-row">
+                <div><h2>GIỎ HÀNG CỦA BẠN</h2><p id="cart-title">Đồ bạn đã chọn</p></div>
+                <button class="close-cart" type="button" data-cart-close aria-label="Đóng giỏ hàng">✕</button>
+            </div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="cart-summary">
+                <div class="subtotal-row"><span>Tạm tính</span><span data-cart-subtotal>1.890.000đ</span></div>
+                <p class="shipping-note">Phí giao hàng sẽ được xác nhận sau.</p>
+                <button class="button-dark button-full" type="button" data-checkout-button>Tiếp tục đặt hàng ↗</button>
+                <form class="checkout-form" data-checkout-form hidden>
+                    <h3>Thông tin nhận hàng</h3>
+                    <div class="field"><label for="products-order-name">Họ và tên</label><input id="products-order-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="field"><label for="products-order-email">Email</label><input id="products-order-email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="field"><label for="products-order-phone">Số điện thoại</label><input id="products-order-phone" name="phone" type="tel" autocomplete="tel" required></div>
+                    <div class="field"><label for="products-order-address">Địa chỉ nhận hàng</label><input id="products-order-address" name="address" type="text" autocomplete="street-address" required></div>
+                    <button class="button-dark button-full" type="submit">Xác nhận đơn hàng ↗</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

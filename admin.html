@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang quản trị demo TechGear - quản lý đơn hàng.">
+    <title>Quản trị | TechGear.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="store.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng quản trị">
+            <a class="brand" href="index.html" aria-label="TechGear - Trang chủ">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <div class="admin-nav">
+                <ul class="admin-tabs">
+                    <li><a href="index.html">Cửa hàng</a></li>
+                    <li><a href="admin.html" aria-current="page">Quản trị</a></li>
+                </ul>
+            </div>
+            <div class="navbar-actions">
+                <button class="cart-trigger" type="button" data-cart-trigger>Giỏ hàng <span class="cart-trigger-count" data-cart-count>1</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <div class="admin-title">
+            <span class="eyebrow">KHU VỰC QUẢN TRỊ</span>
+            <h1>TECHGEAR BACK-OFFICE - Quản lý đơn hàng</h1>
+        </div>
+
+        <section class="form-card admin-card" aria-labelledby="admin-login-title">
+            <h2 id="admin-login-title">Đăng nhập</h2>
+            <form data-admin-form>
+                <div class="field">
+                    <label for="admin-code">Mã khóa quản trị</label>
+                    <input id="admin-code" name="admin-code" type="password" autocomplete="current-password" placeholder="Nhập mã khóa" required>
+                </div>
+                <button class="button-dark button-full" type="submit">Vào trang quản trị ↗</button>
+                <p class="admin-hint">Mã khóa demo: <strong>TG2026</strong> (trang quản trị minh họa, không dùng cho dữ liệu thật).</p>
+            </form>
+        </section>
+
+        <section class="admin-dashboard" data-admin-dashboard hidden aria-labelledby="orders-title">
+            <h2 id="orders-title">Danh sách đơn hàng mẫu</h2>
+            <div class="table-scroll">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Mã đơn</th>
+                            <th scope="col">Tên khách</th>
+                            <th scope="col">Sản phẩm</th>
+                            <th scope="col">Tổng tiền</th>
+                            <th scope="col">Trạng thái</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#TG-2026-001</td><td>Nguyễn Minh Anh</td><td>Akko 5075B Plus</td><td>1.890.000đ</td><td><span class="status-pill">Hoàn tất</span></td></tr>
+                        <tr><td>#TG-2026-002</td><td>Trần Hoàng Nam</td><td>Keychron K2 Wireless</td><td>2.190.000đ</td><td><span class="status-pill status-pill-pending">Đang xử lý</span></td></tr>
+                        <tr><td>#TG-2026-003</td><td>Lê Thu Hà</td><td>Logitech G Pro X Superlight</td><td>3.290.000đ</td><td><span class="status-pill">Hoàn tất</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">T</span><span class="brand-name">techgear.</span></a>
+            <p>© 2026 TechGear. Khu vực quản trị minh họa.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" data-cart-overlay aria-hidden="true">
+        <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+            <div class="cart-heading-row">
+                <div><h2>GIỎ HÀNG CỦA BẠN</h2><p id="cart-title">Đồ bạn đã chọn</p></div>
+                <button class="close-cart" type="button" data-cart-close aria-label="Đóng giỏ hàng">✕</button>
+            </div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="cart-summary">
+                <div class="subtotal-row"><span>Tạm tính</span><span data-cart-subtotal>1.890.000đ</span></div>
+                <p class="shipping-note">Phí giao hàng sẽ được xác nhận sau.</p>
+                <button class="button-dark button-full" type="button" data-checkout-button>Tiếp tục đặt hàng ↗</button>
+                <form class="checkout-form" data-checkout-form hidden>
+                    <h3>Thông tin nhận hàng</h3>
+                    <div class="field"><label for="admin-order-name">Họ và tên</label><input id="admin-order-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="field"><label for="admin-order-email">Email</label><input id="admin-order-email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="field"><label for="admin-order-phone">Số điện thoại</label><input id="admin-order-phone" name="phone" type="tel" autocomplete="tel" required></div>
+                    <div class="field"><label for="admin-order-address">Địa chỉ nhận hàng</label><input id="admin-order-address" name="address" type="text" autocomplete="street-address" required></div>
+                    <button class="button-dark button-full" type="submit">Xác nhận đơn hàng ↗</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

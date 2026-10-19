@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechGear chọn lọc phụ kiện công nghệ giúp góc máy của bạn tốt hơn mỗi ngày.">
+    <title>TechGear. | Gear đang nâng cấp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="store.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng chính">
+            <a class="brand" href="index.html" aria-label="TechGear - Trang chủ">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="feedback.html">Góp ý</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="cart-trigger" type="button" data-cart-trigger>
+                    Giỏ hàng <span class="cart-trigger-count" data-cart-count>1</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container home-main">
+        <section aria-labelledby="featured-heading">
+            <h1 class="section-heading home-heading" id="featured-heading">Gear đang nâng cấp</h1>
+            <div class="product-grid">
+                <article class="product-card" data-category="keyboard">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1595225476474-87563907a212?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Bàn phím cơ Keychron K2 Wireless với keycap nhiều màu" fetchpriority="high">
+                        <span class="product-badge">BÀN PHÍM CƠ</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">BÀN PHÍM CƠ</p>
+                        <h2 class="product-title">Keychron K2 Wireless</h2>
+                        <p class="product-price">2.190.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Keychron K2 Wireless vào giỏ hàng" data-add-to-cart data-id="keychron-k2" data-name="Keychron K2 Wireless" data-price="2190000">+</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="mouse">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Chuột gaming Logitech G Pro X Superlight màu trắng" loading="lazy">
+                        <span class="product-badge product-badge-hot">HOT</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">CHUỘT GAMING</p>
+                        <h2 class="product-title">Logitech G Pro X Superlight</h2>
+                        <p class="product-price">3.290.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Logitech G Pro X Superlight vào giỏ hàng" data-add-to-cart data-id="logitech-superlight" data-name="Logitech G Pro X Superlight" data-price="3290000">+</button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-category="audio">
+                    <div class="product-image-wrap">
+                        <img class="product-image" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&amp;fit=crop&amp;w=900&amp;q=85" alt="Tai nghe chụp tai Sony WH-1000XM5" loading="lazy">
+                        <span class="product-badge">TAI NGHE</span>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">TAI NGHE</p>
+                        <h2 class="product-title">Sony WH-1000XM5</h2>
+                        <p class="product-price">7.490.000đ</p>
+                        <button class="add-button" type="button" aria-label="Thêm Sony WH-1000XM5 vào giỏ hàng" data-add-to-cart data-id="sony-wh1000xm5" data-name="Sony WH-1000XM5" data-price="7490000">+</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="index.html">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <p>© 2026 TechGear. Bản quyền của Nguyễn Hoàng Sơn - PH64882.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" data-cart-overlay aria-hidden="true">
+        <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+            <div class="cart-heading-row">
+                <div>
+                    <h2>GIỎ HÀNG CỦA BẠN</h2>
+                    <p id="cart-title">Đồ bạn đã chọn</p>
+                </div>
+                <button class="close-cart" type="button" data-cart-close aria-label="Đóng giỏ hàng">✕</button>
+            </div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="cart-summary">
+                <div class="subtotal-row">
+                    <span>Tạm tính</span>
+                    <span data-cart-subtotal>1.890.000đ</span>
+                </div>
+                <p class="shipping-note">Phí giao hàng sẽ được xác nhận sau.</p>
+                <button class="button-dark button-full" type="button" data-checkout-button>Tiếp tục đặt hàng ↗</button>
+                <form class="checkout-form" data-checkout-form hidden>
+                    <h3>Thông tin nhận hàng</h3>
+                    <div class="field">
+                        <label for="home-order-name">Họ và tên</label>
+                        <input id="home-order-name" name="name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="home-order-email">Email</label>
+                        <input id="home-order-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="home-order-phone">Số điện thoại</label>
+                        <input id="home-order-phone" name="phone" type="tel" autocomplete="tel" required>
+                    </div>
+                    <div class="field">
+                        <label for="home-order-address">Địa chỉ nhận hàng</label>
+                        <input id="home-order-address" name="address" type="text" autocomplete="street-address" required>
+                    </div>
+                    <button class="button-dark button-full" type="submit">Xác nhận đơn hàng ↗</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>

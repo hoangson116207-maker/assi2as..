@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chia sẻ nhận xét để giúp TechGear cải thiện trải nghiệm mua sắm.">
+    <title>Góp ý | TechGear.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="store.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Điều hướng chính">
+            <a class="brand" href="index.html" aria-label="TechGear - Trang chủ">
+                <span class="brand-mark" aria-hidden="true">T</span>
+                <span class="brand-name">techgear.</span>
+            </a>
+            <ul class="main-nav">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="feedback.html" aria-current="page">Góp ý</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="cart-trigger" type="button" data-cart-trigger>Giỏ hàng <span class="cart-trigger-count" data-cart-count>1</span></button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-main">
+        <div class="feedback-layout">
+            <section class="feedback-copy" aria-labelledby="feedback-title">
+                <span class="eyebrow">LẮNG NGHE ĐỂ TỐT HƠN</span>
+                <h1 id="feedback-title">Góp ý của bạn <span class="accent-blue">làm tụi mình tốt hơn.</span></h1>
+                <p>Một phút chia sẻ, giúp trải nghiệm TechGear ngày một tốt hơn.</p>
+                <div class="quote-card">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <blockquote>Chúng mình tin rằng gear tốt là gear hợp với chính bạn.</blockquote>
+                    <p>Cảm ơn bạn đã dành thời gian để TechGear hiểu và phục vụ bạn tốt hơn.</p>
+                </div>
+            </section>
+
+            <section class="form-card" aria-labelledby="feedback-form-title">
+                <span class="form-kicker">CHIA SẺ TRẢI NGHIỆM</span>
+                <h2 id="feedback-form-title">Bạn thấy thế nào?</h2>
+                <form data-feedback-form>
+                    <div class="field">
+                        <label for="feedback-name">Họ và tên</label>
+                        <input id="feedback-name" name="name" type="text" autocomplete="name" placeholder="Tên của bạn" required>
+                    </div>
+                    <div class="field">
+                        <label for="feedback-rating">Đánh giá mức độ hài lòng</label>
+                        <select id="feedback-rating" name="rating" required>
+                            <option value="">Chọn mức độ hài lòng</option>
+                            <option value="5">⭐⭐⭐⭐⭐ - Rất hài lòng</option>
+                            <option value="4">⭐⭐⭐⭐ - Hài lòng</option>
+                            <option value="3">⭐⭐⭐ - Bình thường</option>
+                            <option value="2">⭐⭐ - Chưa hài lòng</option>
+                            <option value="1">⭐ - Không hài lòng</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="feedback-message">Nội dung nhận xét</label>
+                        <textarea id="feedback-message" name="message" placeholder="Chia sẻ trải nghiệm của bạn..." required></textarea>
+                    </div>
+                    <button class="button-dark button-full" type="submit">Gửi góp ý ↗</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="feedback-table-section" aria-labelledby="reviews-title">
+            <h2 id="reviews-title">Góp ý gần đây</h2>
+            <div class="table-scroll">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">STT</th>
+                            <th scope="col">Khách hàng</th>
+                            <th scope="col">Đánh giá</th>
+                            <th scope="col">Nhận xét</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>01</td><td>Minh Anh</td><td class="stars" aria-label="5 trên 5 sao">★★★★★</td><td>Tư vấn dễ hiểu, mình chọn được đúng chiếc bàn phím cần tìm.</td></tr>
+                        <tr><td>02</td><td>Hoàng Nam</td><td class="stars" aria-label="5 trên 5 sao">★★★★★</td><td>Đóng gói cẩn thận, giao hàng nhanh và sản phẩm rất đẹp.</td></tr>
+                        <tr><td>03</td><td>Thu Hà</td><td class="stars" aria-label="4 trên 5 sao">★★★★☆</td><td>Nhiều lựa chọn phụ kiện, mong cửa hàng có thêm màu mới.</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">T</span><span class="brand-name">techgear.</span></a>
+            <p>© 2026 TechGear. Bản quyền của Nguyễn Hoàng Sơn - PH64882.</p>
+        </div>
+    </footer>
+
+    <div class="modal-overlay" data-cart-overlay aria-hidden="true">
+        <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+            <div class="cart-heading-row">
+                <div><h2>GIỎ HÀNG CỦA BẠN</h2><p id="cart-title">Đồ bạn đã chọn</p></div>
+                <button class="close-cart" type="button" data-cart-close aria-label="Đóng giỏ hàng">✕</button>
+            </div>
+            <div class="cart-items" data-cart-items></div>
+            <div class="cart-summary">
+                <div class="subtotal-row"><span>Tạm tính</span><span data-cart-subtotal>1.890.000đ</span></div>
+                <p class="shipping-note">Phí giao hàng sẽ được xác nhận sau.</p>
+                <button class="button-dark button-full" type="button" data-checkout-button>Tiếp tục đặt hàng ↗</button>
+                <form class="checkout-form" data-checkout-form hidden>
+                    <h3>Thông tin nhận hàng</h3>
+                    <div class="field"><label for="feedback-order-name">Họ và tên</label><input id="feedback-order-name" name="name" type="text" autocomplete="name" required></div>
+                    <div class="field"><label for="feedback-order-email">Email</label><input id="feedback-order-email" name="email" type="email" autocomplete="email" required></div>
+                    <div class="field"><label for="feedback-order-phone">Số điện thoại</label><input id="feedback-order-phone" name="phone" type="tel" autocomplete="tel" required></div>
+                    <div class="field"><label for="feedback-order-address">Địa chỉ nhận hàng</label><input id="feedback-order-address" name="address" type="text" autocomplete="street-address" required></div>
+                    <button class="button-dark button-full" type="submit">Xác nhận đơn hàng ↗</button>
+                </form>
+            </div>
+        </aside>
+    </div>
+</body>
+</html>
